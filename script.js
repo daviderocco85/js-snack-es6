@@ -38,4 +38,13 @@ for (let i = 1; i < raceBikes.length; i++) {
 console.log(lightest);
 
 
+// Soluzione alternativa con il ciclo for of
+let smallest = raceBikes[0];
 
+for (const bike of raceBikes) {
+  if (bike.weightKg < smallest.weightKg) {
+    smallest = bike;
+  }
+}
+
+console.log(lightest);
