@@ -214,3 +214,15 @@ for (let i = 0; i < footballTeams.length; i++) {
 }
 
 console.log(teamsNameAndFouls);
+
+// Ciclo for of alternativo che li aggiunge nell'array alternativo di oggetti onlyTeamsNameAndFouls 
+const onlyTeamsNameAndFouls = [];
+
+for (const team of footballTeams) {
+  onlyTeamsNameAndFouls.push({
+    name: team.name,
+    'fouls against': team['fouls against']
+  });
+}
+
+console.log(onlyTeamsNameAndFouls);
